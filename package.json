@@ -1,17 +1,27 @@
 {
-  "name": "cypressautomationuicodewithts",
+  "name": "cypressautomationuicode",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "test:addToCart": "npx cypress run --spec cypress/e2e/tests/addToCartFlow.cy.ts",
+    "test:registerationFlow": "npx cypress run --spec cypress/e2e/tests/registerTest.cy.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "cypress": "^13.13.3"
+    "faker": "^5.5.3"
   },
   "devDependencies": {
+    "@faker-js/faker": "^8.4.1",
+    "@types/cypress": "^1.1.3",
+    "@types/mocha": "^10.0.7",
+    "cypress": "^13.13.3",
+    "cypress-mochawesome-reporter": "^3.8.2",
+    "glob": "^11.0.0",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.3.0",
     "typescript": "^5.5.4"
   }
 }

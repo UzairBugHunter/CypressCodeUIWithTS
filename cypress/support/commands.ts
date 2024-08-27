@@ -23,3 +23,39 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+
+// Extend Cypress interface to include custom commands
+// cypress/support/commands.ts
+
+// Import Cypress types
+// cypress/support/commands.ts
+
+// Extend the Cypress namespace to include custom commands
+// cypress/support/commands.ts
+
+// cypress/support/commands.ts
+
+// Augmenting the Cypress namespace to include the custom command
+
+ // Import Cypress types
+// cypress/support/commands.ts
+
+// Import the Cypress type definitions  
+  // Define the custom command
+// cypress/support/commands.ts
+
+// cypress/support/commands.ts
+
+/// <reference types="cypress" />
+
+Cypress.Commands.add('login', (email: string, password: string) => {
+  cy.visit('');
+
+  cy.get('#input-email').type(email);
+  cy.get('#input-password').type(password);
+  cy.get('input[value="Login"]').click();
+
+});
+
+   

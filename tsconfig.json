@@ -1,22 +1,19 @@
 {
-    "compilerOptions": {
-      "target": "ES6",
-      "module": "commonjs",
-      "strict": true,
-      "esModuleInterop": true,
-      "skipLibCheck": true,
-      "forceConsistentCasingInFileNames": true,
-      "baseUrl": "./",
-      "paths": {
-        "@/*": ["src/*"]
-      }
-    },
-    "include": [
-      "cypress/**/*.ts",
-      "cypress/**/*.tsx"
-    ],
-    "exclude": [
-      "node_modules"
-    ]
-  }
-  
+  "compilerOptions": {
+    "target": "es6", // Use es6 or higher for better support
+    "lib": ["es6", "dom"], // Include necessary libraries
+    "types": ["cypress", "node"], // Include Cypress and Node.js types
+    "strict": true, // Enable strict type checking
+    "esModuleInterop": true,
+    "skipLibCheck": true, // Skip type checking of declaration files
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true, // Enable JSON module resolution
+    "module": "commonjs", // Use commonjs for module resolution
+    "moduleResolution": "node" // Use Node.js module resolution
+  },
+  "include": [
+    "cypress/**/*.ts", // Include Cypress test files
+    "cypress/support/**/*.ts" // Include Cypress support files
+  ],
+
+}
