@@ -1,0 +1,14 @@
+{
+    "login": {
+        "username" : "malikuzairabbas2@gmail.com",
+        "password" : "12bn34nm56m,"
+    },
+
+    "product": {
+        "productName" : "MacBook"
+    },
+
+    "message": {
+        "successMessage" : "Success: You have added MacBook to your shopping cart!"
+    }
+}
